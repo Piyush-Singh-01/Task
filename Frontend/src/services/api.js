@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://task-1-shvp.onrender.com",
+  baseURL: "https://task-1-shvp.onrender.com/api/tasks",
   withCredentials: true
 
 });

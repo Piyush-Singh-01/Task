@@ -149,13 +149,13 @@ function App() {
       <main className="max-w-6xl mx-auto px-4 py-6">
         {/* Stats Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+          <div className="text-center bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
             <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">
               Total Tasks
             </p>
             <p className="text-2xl font-bold text-slate-800 mt-1">{totalTasks}</p>
           </div>
-          <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+          <div className="text-center bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
             <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">
               Completed
             </p>
@@ -163,7 +163,7 @@ function App() {
               {completedTasks}
             </p>
           </div>
-          <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+          <div className="text-center bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
             <p className="text-xs text-slate-500 font-medium uppercase tracking-wide">
               Pending
             </p>

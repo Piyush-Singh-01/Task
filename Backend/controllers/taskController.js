@@ -1,7 +1,6 @@
 const Task = require("../models/taskModel");
 
-// @desc    Get all tasks
-// @route   GET /api/tasks
+
 const getAllTasks = async (req, res, next) => {
   try {
     const tasks = await Task.find().sort({ createdAt: -1 });
@@ -16,8 +15,7 @@ const getAllTasks = async (req, res, next) => {
   }
 };
 
-// @desc    Get single task by ID
-// @route   GET /api/tasks/:id
+
 const getTaskById = async (req, res, next) => {
   try {
     const task = await Task.findById(req.params.id);
@@ -35,8 +33,7 @@ const getTaskById = async (req, res, next) => {
   }
 };
 
-// @desc    Create a new task
-// @route   POST /api/tasks
+
 const createTask = async (req, res, next) => {
   try {
     const { title, description, status, dueDate } = req.body;
@@ -73,8 +70,7 @@ const createTask = async (req, res, next) => {
   }
 };
 
-// @desc    Update a task
-// @route   PUT /api/tasks/:id
+
 const updateTask = async (req, res, next) => {
   try {
     const { title, description, status, dueDate } = req.body;
@@ -125,8 +121,6 @@ const updateTask = async (req, res, next) => {
   }
 };
 
-// @desc    Delete a task
-// @route   DELETE /api/tasks/:id
 const deleteTask = async (req, res, next) => {
   try {
     const task = await Task.findById(req.params.id);
@@ -149,10 +143,4 @@ const deleteTask = async (req, res, next) => {
   }
 };
 
-module.exports = {
-  getAllTasks,
-  getTaskById,
-  createTask,
-  updateTask,
-  deleteTask,
-};
+module.exports = {getAllTasks, getTaskById, createTask,updateTask, deleteTask};

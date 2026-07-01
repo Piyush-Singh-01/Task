@@ -11,7 +11,6 @@ const errorHandler = (err, req, res, next) => {
     });
   }
 
-  // Mongoose bad ObjectId (invalid ID format)
   if (err.name === "CastError") {
     return res.status(400).json({
       success: false,

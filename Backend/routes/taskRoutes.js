@@ -1,15 +1,8 @@
 const express = require("express");
-const {
-  getAllTasks,
-  getTaskById,
-  createTask,
-  updateTask,
-  deleteTask,
-} = require("../controllers/taskController");
+const {getAllTasks,getTaskById,createTask,updateTask,deleteTask} = require("../controllers/taskController");
 
 const router = express.Router();
 
-// Task CRUD routes
 router.get("/", getAllTasks);          
 router.get("/:id", getTaskById);     
 router.post("/", createTask);         

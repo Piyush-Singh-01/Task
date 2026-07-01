@@ -10,10 +10,10 @@ const {
 const router = express.Router();
 
 // Task CRUD routes
-router.get("/", getAllTasks);          // GET    /api/tasks
-router.get("/:id", getTaskById);      // GET    /api/tasks/:id
-router.post("/", createTask);         // POST   /api/tasks
-router.put("/:id", updateTask);       // PUT    /api/tasks/:id
-router.delete("/:id", deleteTask);    // DELETE /api/tasks/:id
+router.get("/", getAllTasks);          
+router.get("/:id", getTaskById);     
+router.post("/", createTask);         
+router.put("/:id", updateTask);       
+router.delete("/:id", deleteTask);    
 
 module.exports = router;

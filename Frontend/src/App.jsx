@@ -2,7 +2,6 @@ import { useState, useEffect, useMemo } from "react";
 import { toast } from "react-toastify";
 import {getAllTasks, createTask, updateTask, deleteTask,} from "./services/api";
 
-// Components
 import Navbar from "./components/Navbar";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";

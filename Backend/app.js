@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin:"https://task-nine-gold.vercel.app/",
+    origin:"https://task-nine-gold.vercel.app",
     credentials: true,
   })
 );
